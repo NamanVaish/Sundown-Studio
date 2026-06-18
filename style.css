@@ -17,7 +17,7 @@ body {
 }
 
 #page1 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #efeae3;
     position: relative;
@@ -79,7 +79,7 @@ nav {
 }
 
 #center {
-    height: 68vh;
+    height: 65vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -98,4 +98,74 @@ nav {
     width: 25vw;
     font-size: 2vw;
     line-height: 2vw;
+}
+
+#page1 video {
+    width: 100%;
+    margin-top: 5vw;
+    border-radius: 30px;
+    position: relative;
+}
+
+#hero-shape {
+    position: absolute;
+    height: 46vw;
+    width: 36vw;
+    right: 0;
+    top: 65vh;
+}
+
+#hero1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #fe320a;
+    filter: blur(15px);
+}
+#hero2 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: linear-gradient(#fe320a, #fe3f0a);
+    filter: blur(20px);
+    position: absolute;
+    filter: blur(25px);
+    animation-name: anime2;
+    animation-duration: 5s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#hero3 {
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: linear-gradient(#fe320a, #fe3f0a);
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 3s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+    to {
+        transform: translate(-20%, 50%);
+    }
 }
