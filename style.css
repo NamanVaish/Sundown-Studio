@@ -289,3 +289,52 @@ nav {
         transform: translate(-10%, 10%) skew(-8deg);
     }
 }
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+}
+
+.elem {
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #38383864;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 4vw 0;
+    overflow: hidden;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ff9831;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.1s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+
+#fixed-image {
+    height: 30vw;
+    width: 24vw;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    top: 24%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
