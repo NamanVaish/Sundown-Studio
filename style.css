@@ -3,6 +3,12 @@
     src: url("./fonts/NeueHaasDisplayMediu.ttf");
 }
 
+@font-face {
+    font-family: neue;
+    src: url("./fonts/NeueHaasDisplayLight.ttf");
+    font-weight: 100;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -216,4 +222,31 @@ nav {
     to {
         transform: translate(-100%);
     }
+}
+
+#page2-bottom {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+}
+
+#page2-bottom h1 {
+    font-size: 3.5vw;
+    width: 50%;
+}
+
+#bottom-part2 {
+    width: 20%;
+}
+
+#bottom-part2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#bottom-part2 p {
+    font-weight: 100;
 }
