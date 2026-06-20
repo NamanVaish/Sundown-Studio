@@ -296,6 +296,26 @@ nav {
     background-color: #efeae3;
 }
 
+#page3 #projects {
+    display: flex;
+    align-items: center;
+    padding: 4vw 2vw;
+    gap: 1.2vw;
+    color: #000000bb;
+}
+
+#projects #dot {
+    height: 1.3vw;
+    width: 1.3vw;
+    border-radius: 50%;
+    background-color: #ff2d03;
+}
+
+#projects h3 {
+    font-weight: 200;
+    font-size: 1.9vw;
+}
+
 .elem {
     height: 150px;
     width: 100%;
@@ -307,10 +327,35 @@ nav {
     overflow: hidden;
 }
 
-.elem h2 {
+.elem #elem-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#elem-content #elem-content-part1 h2 {
     font-size: 3vw;
     position: relative;
     z-index: 9;
+}
+
+#elem-content #elem-content-part2 {
+    text-align: right;
+    position: relative;
+    z-index: 9;
+}
+
+#elem-content-part2 h3 {
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+#elem-content-part2 h4 {
+    font-size: 1.3vw;
+    font-weight: 200;
+    color: #ada7a7;
 }
 
 .elem .overlay {
@@ -329,12 +374,54 @@ nav {
 
 #fixed-image {
     height: 30vw;
-    width: 24vw;
-    border-radius: 10px;
+    width: 26vw;
+    border-radius: 20px;
     position: fixed;
     left: 50%;
-    top: 24%;
+    top: 25%;
     display: none;
     background-size: cover;
     background-position: center;
+    z-index: 99;
+}
+
+#page3 #btn {
+    padding: 0 2vw;
+    margin-top: 3vw;
+}
+
+#btn button {
+    padding: 20px 40px;
+    border: 2px solid #111;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000bb;
+    position: relative;
+    transition: all ease 0.3s;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 9;
+}
+
+#btn button::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    z-index: -1;
+}
+
+#btn button:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#btn button:hover {
+    color: #fff;
 }
