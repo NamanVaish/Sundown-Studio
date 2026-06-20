@@ -425,3 +425,63 @@ nav {
 #btn button:hover {
     color: #fff;
 }
+
+#page4 {
+    min-height: 150vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 3vw 2vw;
+}
+
+#page4-container{
+height: 110vh;
+width: 100%;
+background-color: #000000;
+display: flex;
+border-radius: 20px;
+
+}
+
+#page4-left{
+width: 46%;
+position: relative;
+}
+
+#page4-left #left-content{
+width: 100%;
+position: absolute;
+top: 28%;
+left: 13%;
+border-left: 2px solid #504a45;
+}
+
+#left-content h2{
+padding: 0 3vw;
+gap: 2vw;
+}
+
+#left-content h2 a{
+
+font-size: 7vw;
+color: #504a45;
+text-decoration: none;
+text-align: left;
+}
+
+#page4-left #info{
+padding-top: 2vw;
+position: absolute;
+top: 38%;
+left: 13%;
+margin-top: 4vw;
+}
+
+#page4-left #info p{
+padding-top: 2vw;
+color: #efeae3;
+font-size: 2.5vw;
+}
+
+#page4-right{
+width: 54%;
+}
